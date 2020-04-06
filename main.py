@@ -15,7 +15,7 @@ def data(username,password,id,mode):
 			balas(id,'kamu tidak memiliki list web yg terdeface')
 @wp.route('/',methods=['GET','POST'])
 def skuy():
-	if request.method == 'post':
+	if request.method == 'POST':
 		DataUpdate = request.get_json()
 		returner(DataUpdate)
 		return 'pop'
